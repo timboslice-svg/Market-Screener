@@ -1,0 +1,16 @@
+/private/tmp/claude-501/-Users-timsteinkaemper-Documents-6-Business-7-Trading-Bot-Polymarket-8-Directional-Bot/23d6eb79-5d80-4ad8-85b0-6c162eacdaab/scratchpad/round7.py:122: Pandas4Warning: Sorting by default when concatenating all DatetimeIndex is deprecated.  In the future, pandas will respect the default of `sort=False`. Specify `sort=True` or `sort=False` to silence this message. If you see this warnings when not directly calling concat, report a bug to pandas.
+  F = pd.concat(futs.values(), axis=1)
+[H51] pre-holiday days/yr: 9.1
+name                      start      end           cagr  bench    exc   shp  bshp    mdd     t    h1ex    h2ex   w12  verdict
+-----------------------------------------------------------------------------------------------------------------------------
+H50 GTAA6 top2            2004-11-18 2026-07-29   10.7%  10.8%  -0.0%  0.72  0.64 -32.9% -0.14   59.4%  -37.7%   39%  REJECT
+H51 Pre-holiday only      1993-02-01 2026-07-29    2.0%  10.7%  -8.7%  0.66  0.64  -8.5% -3.06  -58.9%  -84.2%   19%  REJECT
+H52 Defensive-ratio gate  1998-12-23 2026-07-29    5.1%   8.6%  -3.5%  0.43  0.53 -50.1% -1.58  -38.1%  -33.9%   21%  REJECT
+H53 SMH-lead QQQ          2000-06-06 2026-07-29    6.9%   8.2%  -1.4%  0.52  0.51 -61.9% -0.58  -35.6%   11.7%   44%  REJECT
+H54 Dow-theory veto       2004-01-05 2026-07-29    9.3%  10.7%  -1.4%  0.78  0.64 -23.0% -0.76   -1.6%  -24.4%   28%  REJECT
+H55 Corr-regime derisk    1993-02-01 2026-07-29   10.0%  10.7%  -0.8%  0.69  0.64 -39.1% -1.18   13.0%  -30.0%   22%  REJECT
+H56 Contango-only SPY     1993-02-01 2026-07-29    9.5%  10.7%  -1.2%  0.62  0.64 -55.2% -1.04    0.0%  -30.5%   14%  REJECT
+H57 SPY + CTA overlay     2000-08-30 2026-07-29    9.4%   8.2%   1.2%  0.56  0.51 -56.2%  1.48   20.2%   11.1%   54%  REJECT
+H58 Gap fade/follow       1993-02-01 2026-07-29   -2.6%  10.7% -13.4% -0.15  0.64 -80.4% -3.52  -73.1%  -95.0%   18%  REJECT
+H59 Index rotation        2003-09-29 2026-07-29   10.6%  11.1%  -0.5%  0.68  0.66 -30.0% -0.25   10.4%  -18.1%   38%  REJECT
+saved round7_results.csv

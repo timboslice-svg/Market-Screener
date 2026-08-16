@@ -1,0 +1,5 @@
+[bootstrap] crumb via query1 failed: HTTP Error 429: Too Many Requests
+[bootstrap] crumb via query2 failed: HTTP Error 429: Too Many Requests
+[bootstrap] cookies=1 crumb=NO (chart API may still work)
+dx.f,DX=F,0,None,None,BAD(HTTP 429)
+DONE ok=139 bad=1 (cached 139)

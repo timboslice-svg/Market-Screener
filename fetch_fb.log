@@ -1,0 +1,11 @@
+vix.csv: cached
+vix3m.csv: cached
+put.csv: cached
+bxm.csv: cached
+bxy.csv: cached
+cll.csv: cached
+cndr.csv: cached
+ff_factors.csv: cached
+ff_mom.csv: cached
+ff_mom10.csv: cached
+ff_ind49.csv: cached

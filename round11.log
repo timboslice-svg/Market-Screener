@@ -1,0 +1,24 @@
+======================================================================
+Event studies (excess vs SPY after idiosyncratic drops), 1995-2026
+SURVIVORSHIP-BIASED — treat positive results as upper bounds
+======================================================================
+E1: -15%/10d, mkt flat, no health filter
+  20d: n= 887 mean_ex=+1.14% med=+0.37% hit=52% t=2.33
+  60d: n= 879 mean_ex=+5.46% med=+2.61% hit=57% t=5.86
+E2: -15%/10d, mkt flat, was near 52w high (healthy)
+  20d: n= 255 mean_ex=+1.55% med=+1.11% hit=55% t=2.04
+  60d: n= 253 mean_ex=+5.16% med=+1.88% hit=56% t=2.74
+E3: -25%/21d, mkt flat (big idiosyncratic crash)
+  20d: n= 294 mean_ex=+1.05% med=+0.33% hit=50% t=1.12
+  60d: n= 293 mean_ex=+6.57% med=+4.24% hit=58% t=3.92
+E4: -25%/21d, healthy before
+  20d: n=  75 mean_ex=-1.80% med=-1.51% hit=45% t=-1.14
+  60d: n=  75 mean_ex=+2.44% med=+2.57% hit=57% t=0.93
+E5: -10% single day, mkt flat (earnings-shock style)
+  20d: n= 432 mean_ex=+1.59% med=+0.46% hit=52% t=2.10
+  60d: n= 427 mean_ex=+4.34% med=+1.68% hit=52% t=3.16
+E6: -10% single day, healthy before
+  20d: n= 112 mean_ex=+0.05% med=+1.48% hit=55% t=0.04
+  60d: n= 108 mean_ex=+1.88% med=-0.75% hit=48% t=0.72
+
+Control (baseline drift): random-entry excess should be ~0 by construction of excess returns.

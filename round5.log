@@ -1,0 +1,13 @@
+/private/tmp/claude-501/-Users-timsteinkaemper-Documents-6-Business-7-Trading-Bot-Polymarket-8-Directional-Bot/23d6eb79-5d80-4ad8-85b0-6c162eacdaab/scratchpad/round5.py:38: Pandas4Warning: Sorting by default when concatenating all DatetimeIndex is deprecated.  In the future, pandas will respect the default of `sort=False`. Specify `sort=True` or `sort=False` to silence this message. If you see this warnings when not directly calling concat, report a bug to pandas.
+  C = pd.concat(closes, axis=1)
+[universe] 60 stocks loaded
+name                      start      end           cagr  bench    exc   shp  bshp    mdd     t    h1ex    h2ex   w12  verdict
+-----------------------------------------------------------------------------------------------------------------------------
+H35 CS mom 12-1 top6      1995-01-03 2026-07-29   19.9%  11.1%   8.8%  0.80  0.65 -46.5%  2.97  228.2%  238.9%   66%  ACCEPT
+H35b CS mom 12-1 top12    1995-01-03 2026-07-29   18.9%  11.1%   7.8%  0.87  0.65 -46.3%  3.41  266.1%  133.6%   70%  ACCEPT
+H36 CS low-vol bottom12   1995-01-03 2026-07-29   10.9%  11.1%  -0.3%  0.79  0.65 -35.1% -0.47   45.5%  -36.1%   48%  REJECT
+H37 CS 52w-high top12     1995-01-03 2026-07-29   11.7%  11.1%   0.6%  0.73  0.65 -45.9%  0.11    6.7%   11.8%   59%  REJECT
+H38 CS 1m reversal worst121995-01-03 2026-07-29   16.1%  11.1%   4.9%  0.78  0.65 -58.5%  2.27   90.9%  106.4%   62%  ACCEPT
+
+NOTE: survivorship-biased universe — FAIL=strong reject; PASS=not evidence.
+saved round5_results.csv

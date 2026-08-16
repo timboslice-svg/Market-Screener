@@ -1,0 +1,13 @@
+[skip H66] 'Mom'
+name                      start      end           cagr  bench    exc   shp  bshp    mdd     t    h1ex    h2ex   w12  verdict
+-----------------------------------------------------------------------------------------------------------------------------
+H60 Winner decile (net)   1926-11-03 2026-05-29   14.0%   9.8%   4.1%  0.69  0.63 -80.9%  4.06  832.6%  393.6%   64%  ACCEPT
+H60b Loser decile (gross) 1926-11-03 2026-05-29    1.6%   9.8%  -8.2%  0.20  0.63 -93.7% -3.17  -96.0%  -99.2%   33%  REJECT
+H65 Winners + trend gate  1926-11-03 2026-05-29   14.2%   9.8%   4.4%  0.86  0.63 -48.1%  2.48 2364.2%  128.5%   60%  ACCEPT
+H61 Mkt MA200 1926+       1926-07-06 2026-05-29   10.9%   9.8%   1.1%  0.98  0.63 -33.6%  0.12  318.9%  -32.9%   37%  RA-ONLY
+H63 TOM 1926+             1926-07-02 2026-05-29   10.5%   9.9%   0.6%  1.10  0.64 -55.3% -0.33  138.5%  -25.1%   48%  RA-ONLY
+H64 Pre-holiday 1926+     1926-07-02 2026-05-29    5.0%   9.9%  -4.8%  1.73  0.64  -5.8% -3.58  -79.5%  -95.5%   31%  RA-ONLY
+H62 Industry mom top5     1926-07-01 2026-05-29   15.9%   9.9%   6.0%  0.80  0.64 -76.7%  5.16 2179.0% 1034.8%   68%  ACCEPT
+saved round8_results.csv
+NOTE: benchmark here = total US market (not SPY); French portfolios are
+cost-free academic constructs — drags applied are estimates.
