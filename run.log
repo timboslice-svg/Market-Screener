@@ -1,0 +1,197 @@
+=== launch Thu Jul 30 15:44:58 CST 2026 scheduled=0 ===
+[pycheck] /Library/Frameworks/Python.framework/Versions/3.11/bin/python3 failed: Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/numpy/_core/__init__.py", line 24, in <module>
+    from . import multiarray
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/numpy/_core/multiarray.py", line 11, in <module>
+    from . import _multiarray_umath, overrides
+ImportError: dlopen(/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/numpy/_core/_multiarray_umath.cpython-311-darwin.so, 0x0002): tried: '/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/numpy/_core/_multiarray_umath.cpython-311-darwin.so' (mach-o file, but is an incompatible architecture (have 'arm64', need 'x86_64')), '/System/Volumes/Preboot/Cryptexes/OS/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/numpy/_core/_multiarray_umath.cpython-311-darwin.so' (no such file), '/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/numpy/_core/_multiarray_umath.cpython-311-darwin.so' (mach-o file, but is an incompatible architecture (have 'arm64', need 'x86_64'))
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/pandas/__init__.py", line 11, in <module>
+    __import__(_dependency)
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/numpy/__init__.py", line 112, in <module>
+    from numpy.__config__ import show_config
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/numpy/__config__.py", line 4, in <module>
+    from numpy._core._multiarray_umath import (
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/numpy/_core/__init__.py", line 85, in <module>
+    raise ImportError(msg) from exc
+ImportError: 
+
+IMPORTANT: PLEASE READ THIS FOR ADVICE ON HOW TO SOLVE THIS ISSUE!
+
+Importing the numpy C-extensions failed. This error can happen for
+many reasons, often due to issues with your setup or how NumPy was
+installed.
+
+We have compiled some common reasons and troubleshooting tips at:
+
+    https://numpy.org/devdocs/user/troubleshooting-importerror.html
+
+Please note and check the following:
+
+  * The Python version is: Python 3.11 from "/Library/Frameworks/Python.framework/Versions/3.11/bin/python3"
+  * The NumPy version is: "2.4.4"
+
+and make sure that they are the versions you expect.
+
+Please carefully study the information and documentation linked above.
+This is unlikely to be a NumPy issue but will be caused by a bad install
+or environment on your machine.
+
+Original error was: dlopen(/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/numpy/_core/_multiarray_umath.cpython-311-darwin.so, 0x0002): tried: '/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/numpy/_core/_multiarray_umath.cpython-311-darwin.so' (mach-o file, but is an incompatible architecture (have 'arm64', need 'x86_64')), '/System/Volumes/Preboot/Cryptexes/OS/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/numpy/_core/_multiarray_umath.cpython-311-darwin.so' (no such file), '/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/numpy/_core/_multiarray_umath.cpython-311-darwin.so' (mach-o file, but is an incompatible architecture (have 'arm64', need 'x86_64'))
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/pandas/__init__.py", line 13, in <module>
+    raise ImportError(
+ImportError: Unable to import required dependency numpy. Please see the traceback for details.
+[pycheck] /Library/Frameworks/Python.framework/Versions/3.11/bin/python3 failed: Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/numpy/_core/__init__.py", line 24, in <module>
+    from . import multiarray
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/numpy/_core/multiarray.py", line 11, in <module>
+    from . import _multiarray_umath, overrides
+ImportError: dlopen(/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/numpy/_core/_multiarray_umath.cpython-311-darwin.so, 0x0002): tried: '/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/numpy/_core/_multiarray_umath.cpython-311-darwin.so' (mach-o file, but is an incompatible architecture (have 'arm64', need 'x86_64')), '/System/Volumes/Preboot/Cryptexes/OS/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/numpy/_core/_multiarray_umath.cpython-311-darwin.so' (no such file), '/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/numpy/_core/_multiarray_umath.cpython-311-darwin.so' (mach-o file, but is an incompatible architecture (have 'arm64', need 'x86_64'))
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/pandas/__init__.py", line 11, in <module>
+    __import__(_dependency)
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/numpy/__init__.py", line 112, in <module>
+    from numpy.__config__ import show_config
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/numpy/__config__.py", line 4, in <module>
+    from numpy._core._multiarray_umath import (
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/numpy/_core/__init__.py", line 85, in <module>
+    raise ImportError(msg) from exc
+ImportError: 
+
+IMPORTANT: PLEASE READ THIS FOR ADVICE ON HOW TO SOLVE THIS ISSUE!
+
+Importing the numpy C-extensions failed. This error can happen for
+many reasons, often due to issues with your setup or how NumPy was
+installed.
+
+We have compiled some common reasons and troubleshooting tips at:
+
+    https://numpy.org/devdocs/user/troubleshooting-importerror.html
+
+Please note and check the following:
+
+  * The Python version is: Python 3.11 from "/Library/Frameworks/Python.framework/Versions/3.11/bin/python3"
+  * The NumPy version is: "2.4.4"
+
+and make sure that they are the versions you expect.
+
+Please carefully study the information and documentation linked above.
+This is unlikely to be a NumPy issue but will be caused by a bad install
+or environment on your machine.
+
+Original error was: dlopen(/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/numpy/_core/_multiarray_umath.cpython-311-darwin.so, 0x0002): tried: '/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/numpy/_core/_multiarray_umath.cpython-311-darwin.so' (mach-o file, but is an incompatible architecture (have 'arm64', need 'x86_64')), '/System/Volumes/Preboot/Cryptexes/OS/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/numpy/_core/_multiarray_umath.cpython-311-darwin.so' (no such file), '/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/numpy/_core/_multiarray_umath.cpython-311-darwin.so' (mach-o file, but is an incompatible architecture (have 'arm64', need 'x86_64'))
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/pandas/__init__.py", line 13, in <module>
+    raise ImportError(
+ImportError: Unable to import required dependency numpy. Please see the traceback for details.
+[pycheck] /usr/local/bin/python3 failed: Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/numpy/_core/__init__.py", line 24, in <module>
+    from . import multiarray
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/numpy/_core/multiarray.py", line 11, in <module>
+    from . import _multiarray_umath, overrides
+ImportError: dlopen(/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/numpy/_core/_multiarray_umath.cpython-311-darwin.so, 0x0002): tried: '/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/numpy/_core/_multiarray_umath.cpython-311-darwin.so' (mach-o file, but is an incompatible architecture (have 'arm64', need 'x86_64')), '/System/Volumes/Preboot/Cryptexes/OS/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/numpy/_core/_multiarray_umath.cpython-311-darwin.so' (no such file), '/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/numpy/_core/_multiarray_umath.cpython-311-darwin.so' (mach-o file, but is an incompatible architecture (have 'arm64', need 'x86_64'))
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/pandas/__init__.py", line 11, in <module>
+    __import__(_dependency)
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/numpy/__init__.py", line 112, in <module>
+    from numpy.__config__ import show_config
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/numpy/__config__.py", line 4, in <module>
+    from numpy._core._multiarray_umath import (
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/numpy/_core/__init__.py", line 85, in <module>
+    raise ImportError(msg) from exc
+ImportError: 
+
+IMPORTANT: PLEASE READ THIS FOR ADVICE ON HOW TO SOLVE THIS ISSUE!
+
+Importing the numpy C-extensions failed. This error can happen for
+many reasons, often due to issues with your setup or how NumPy was
+installed.
+
+We have compiled some common reasons and troubleshooting tips at:
+
+    https://numpy.org/devdocs/user/troubleshooting-importerror.html
+
+Please note and check the following:
+
+  * The Python version is: Python 3.11 from "/usr/local/bin/python3"
+  * The NumPy version is: "2.4.4"
+
+and make sure that they are the versions you expect.
+
+Please carefully study the information and documentation linked above.
+This is unlikely to be a NumPy issue but will be caused by a bad install
+or environment on your machine.
+
+Original error was: dlopen(/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/numpy/_core/_multiarray_umath.cpython-311-darwin.so, 0x0002): tried: '/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/numpy/_core/_multiarray_umath.cpython-311-darwin.so' (mach-o file, but is an incompatible architecture (have 'arm64', need 'x86_64')), '/System/Volumes/Preboot/Cryptexes/OS/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/numpy/_core/_multiarray_umath.cpython-311-darwin.so' (no such file), '/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/numpy/_core/_multiarray_umath.cpython-311-darwin.so' (mach-o file, but is an incompatible architecture (have 'arm64', need 'x86_64'))
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/pandas/__init__.py", line 13, in <module>
+    raise ImportError(
+ImportError: Unable to import required dependency numpy. Please see the traceback for details.
+[pycheck] /usr/bin/python3 failed: Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+ModuleNotFoundError: No module named 'pandas'
+=== launch Thu Jul 30 15:48:54 CST 2026 scheduled=0 ===
+[pycheck] using /Library/Frameworks/Python.framework/Versions/3.11/bin/python3
+[schedule] nightly agent installed (/Users/timsteinkaemper/Library/LaunchAgents/com.tim.marketscreener.plist)
+=== launch Thu Jul 30 16:04:08 CST 2026 scheduled=0 ===
+[pycheck] using /Library/Frameworks/Python.framework/Versions/3.11/bin/python3
+[schedule] nightly agent installed (/Users/timsteinkaemper/Library/LaunchAgents/com.tim.marketscreener.plist)
+/Users/timsteinkaemper/Documents/6_Business/7_Trading_Bot/equity_research_2026-07/screener/scan.py:39: Pandas4Warning: Sorting by default when concatenating all DatetimeIndex is deprecated.  In the future, pandas will respect the default of `sort=False`. Specify `sort=True` or `sort=False` to silence this message. If you see this warnings when not directly calling concat, report a bug to pandas.
+  close = pd.concat(frames_c, axis=1) if frames_c else pd.DataFrame()
+/Users/timsteinkaemper/Documents/6_Business/7_Trading_Bot/equity_research_2026-07/screener/scan.py:40: Pandas4Warning: Sorting by default when concatenating all DatetimeIndex is deprecated.  In the future, pandas will respect the default of `sort=False`. Specify `sort=True` or `sort=False` to silence this message. If you see this warnings when not directly calling concat, report a bug to pandas.
+  vol = pd.concat(frames_v, axis=1) if frames_v else pd.DataFrame()
+scan: 40 flags on 2026-07-30 (7 down / 33 up)
+  GRMN       US  z1= +6.6 z5= +4.1 r5= +22.6% 52w=100.0% vol×4.4
+  LII        US  z1= -6.4 z5= -2.5 r5= -19.3% 52w= 70.6% vol×4.4
+  CTSH       US  z1= +4.0 z5= +4.5 r5= +29.6% 52w= 65.3% vol×2.0
+  GEHC       US  z1= +4.9 z5= +3.1 r5= +17.1% 52w= 81.7% vol×2.8
+  ROP        US  z1= +2.7 z5= +4.9 r5= +21.2% 52w= 74.5% vol×1.4
+  VRT        US  z1= -4.2 z5= -2.8 r5= -25.9% 52w= 59.3% vol×4.4
+  SOLV       US  z1= +2.3 z5= +3.9 r5= +14.1% 52w=100.0% vol×1.7
+  IT         US  z1= +2.4 z5= +3.8 r5= +25.4% 52w= 48.2% vol×1.1
+  BXP        US  z1= +3.2 z5= +2.7 r5=  +8.2% 52w= 96.6% vol×3.0
+  SGE.L      UK  z1= +2.2 z5= +3.7 r5= +19.9% 52w= 81.3% vol×0.1
+  ADBE       US  z1= +2.4 z5= +3.4 r5= +20.6% 52w= 71.7% vol×1.8
+  FIS        US  z1= +2.3 z5= +3.3 r5= +15.5% 52w= 59.9% vol×1.5
+/Users/timsteinkaemper/Documents/6_Business/7_Trading_Bot/equity_research_2026-07/screener/scan.py:39: Pandas4Warning: Sorting by default when concatenating all DatetimeIndex is deprecated.  In the future, pandas will respect the default of `sort=False`. Specify `sort=True` or `sort=False` to silence this message. If you see this warnings when not directly calling concat, report a bug to pandas.
+  close = pd.concat(frames_c, axis=1) if frames_c else pd.DataFrame()
+/Users/timsteinkaemper/Documents/6_Business/7_Trading_Bot/equity_research_2026-07/screener/scan.py:40: Pandas4Warning: Sorting by default when concatenating all DatetimeIndex is deprecated.  In the future, pandas will respect the default of `sort=False`. Specify `sort=True` or `sort=False` to silence this message. If you see this warnings when not directly calling concat, report a bug to pandas.
+  vol = pd.concat(frames_v, axis=1) if frames_v else pd.DataFrame()
+scan: 40 flags on 2026-07-30 (6 down / 34 up)
+  GRMN       US  z1= +6.6 z5= +4.1 r5= +22.6% 52w=100.0% vol×4.4
+  LII        US  z1= -6.4 z5= -2.5 r5= -19.3% 52w= 70.6% vol×4.4
+  CTSH       US  z1= +4.0 z5= +4.5 r5= +29.6% 52w= 65.3% vol×2.0
+  GEHC       US  z1= +4.9 z5= +3.1 r5= +17.1% 52w= 81.7% vol×2.8
+  ROP        US  z1= +2.7 z5= +4.9 r5= +21.2% 52w= 74.5% vol×1.4
+  VRT        US  z1= -4.2 z5= -2.8 r5= -25.9% 52w= 59.3% vol×4.4
+  SOLV       US  z1= +2.3 z5= +3.9 r5= +14.1% 52w=100.0% vol×1.7
+  IT         US  z1= +2.4 z5= +3.8 r5= +25.4% 52w= 48.2% vol×1.1
+  SGE.L      UK  z1= +2.2 z5= +3.8 r5= +20.6% 52w= 81.8% vol×0.1
+  BXP        US  z1= +3.2 z5= +2.7 r5=  +8.2% 52w= 96.6% vol×3.0
+  ADBE       US  z1= +2.4 z5= +3.4 r5= +20.6% 52w= 71.7% vol×1.8
+  FIS        US  z1= +2.3 z5= +3.3 r5= +15.5% 52w= 59.9% vol×1.5

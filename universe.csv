@@ -1,0 +1,736 @@
+ticker,name,region,bench
+AAPL,Apple,US,^GSPC
+MSFT,Microsoft,US,^GSPC
+NVDA,Nvidia,US,^GSPC
+GOOGL,Alphabet,US,^GSPC
+AMZN,Amazon,US,^GSPC
+META,Meta Platforms,US,^GSPC
+TSLA,Tesla,US,^GSPC
+AVGO,Broadcom,US,^GSPC
+BRK-B,Berkshire Hathaway,US,^GSPC
+JPM,JPMorgan,US,^GSPC
+V,Visa,US,^GSPC
+MA,Mastercard,US,^GSPC
+UNH,UnitedHealth,US,^GSPC
+XOM,Exxon Mobil,US,^GSPC
+JNJ,Johnson & Johnson,US,^GSPC
+WMT,Walmart,US,^GSPC
+PG,Procter & Gamble,US,^GSPC
+HD,Home Depot,US,^GSPC
+COST,Costco,US,^GSPC
+ORCL,Oracle,US,^GSPC
+LLY,Eli Lilly,US,^GSPC
+ABBV,AbbVie,US,^GSPC
+MRK,Merck,US,^GSPC
+KO,Coca-Cola,US,^GSPC
+PEP,PepsiCo,US,^GSPC
+BAC,Bank of America,US,^GSPC
+CRM,Salesforce,US,^GSPC
+AMD,AMD,US,^GSPC
+NFLX,Netflix,US,^GSPC
+ADBE,Adobe,US,^GSPC
+TMO,Thermo Fisher,US,^GSPC
+CSCO,Cisco,US,^GSPC
+ACN,Accenture,US,^GSPC
+INTC,Intel,US,^GSPC
+IBM,IBM,US,^GSPC
+QCOM,Qualcomm,US,^GSPC
+TXN,Texas Instruments,US,^GSPC
+GE,GE Aerospace,US,^GSPC
+CAT,Caterpillar,US,^GSPC
+DE,Deere,US,^GSPC
+BA,Boeing,US,^GSPC
+HON,Honeywell,US,^GSPC
+UPS,UPS,US,^GSPC
+RTX,RTX,US,^GSPC
+LMT,Lockheed Martin,US,^GSPC
+GS,Goldman Sachs,US,^GSPC
+MS,Morgan Stanley,US,^GSPC
+SCHW,Charles Schwab,US,^GSPC
+BLK,BlackRock,US,^GSPC
+AXP,American Express,US,^GSPC
+C,Citigroup,US,^GSPC
+WFC,Wells Fargo,US,^GSPC
+CVX,Chevron,US,^GSPC
+COP,ConocoPhillips,US,^GSPC
+DIS,Disney,US,^GSPC
+CMCSA,Comcast,US,^GSPC
+T,AT&T,US,^GSPC
+VZ,Verizon,US,^GSPC
+NKE,Nike,US,^GSPC
+MCD,McDonald's,US,^GSPC
+SBUX,Starbucks,US,^GSPC
+LOW,Lowe's,US,^GSPC
+PFE,Pfizer,US,^GSPC
+AMGN,Amgen,US,^GSPC
+GILD,Gilead,US,^GSPC
+ISRG,Intuitive Surgical,US,^GSPC
+NOW,ServiceNow,US,^GSPC
+UBER,Uber,US,^GSPC
+PLTR,Palantir,US,^GSPC
+SAP.DE,SAP,DE,^GDAXI
+SIE.DE,Siemens,DE,^GDAXI
+ALV.DE,Allianz,DE,^GDAXI
+DTE.DE,Deutsche Telekom,DE,^GDAXI
+BAS.DE,BASF,DE,^GDAXI
+BAYN.DE,Bayer,DE,^GDAXI
+BMW.DE,BMW,DE,^GDAXI
+MBG.DE,Mercedes-Benz,DE,^GDAXI
+VOW3.DE,Volkswagen,DE,^GDAXI
+DBK.DE,Deutsche Bank,DE,^GDAXI
+DB1.DE,Deutsche Boerse,DE,^GDAXI
+MUV2.DE,Munich Re,DE,^GDAXI
+RWE.DE,RWE,DE,^GDAXI
+IFX.DE,Infineon,DE,^GDAXI
+ADS.DE,Adidas,DE,^GDAXI
+HEI.DE,Heidelberg Materials,DE,^GDAXI
+RHM.DE,Rheinmetall,DE,^GDAXI
+ZAL.DE,Zalando,DE,^GDAXI
+MC.PA,LVMH,FR,^FCHI
+OR.PA,L'Oreal,FR,^FCHI
+TTE.PA,TotalEnergies,FR,^FCHI
+SAN.PA,Sanofi,FR,^FCHI
+AI.PA,Air Liquide,FR,^FCHI
+SU.PA,Schneider Electric,FR,^FCHI
+BNP.PA,BNP Paribas,FR,^FCHI
+AIR.PA,Airbus,FR,^FCHI
+DG.PA,Vinci,FR,^FCHI
+KER.PA,Kering,FR,^FCHI
+RI.PA,Pernod Ricard,FR,^FCHI
+CAP.PA,Capgemini,FR,^FCHI
+EL.PA,EssilorLuxottica,FR,^FCHI
+SGO.PA,Saint-Gobain,FR,^FCHI
+ACA.PA,Credit Agricole,FR,^FCHI
+AZN.L,AstraZeneca,UK,^FTSE
+SHEL.L,Shell,UK,^FTSE
+HSBA.L,HSBC,UK,^FTSE
+ULVR.L,Unilever,UK,^FTSE
+BP.L,BP,UK,^FTSE
+GSK.L,GSK,UK,^FTSE
+RIO.L,Rio Tinto,UK,^FTSE
+REL.L,RELX,UK,^FTSE
+LSEG.L,London Stock Exchange Group,UK,^FTSE
+BARC.L,Barclays,UK,^FTSE
+VOD.L,Vodafone,UK,^FTSE
+TSCO.L,Tesco,UK,^FTSE
+PRU.L,Prudential,UK,^FTSE
+BA.L,BAE Systems,UK,^FTSE
+LLOY.L,Lloyds,UK,^FTSE
+7203.T,Toyota,JP,^N225
+6758.T,Sony,JP,^N225
+9984.T,SoftBank Group,JP,^N225
+8306.T,Mitsubishi UFJ,JP,^N225
+6861.T,Keyence,JP,^N225
+9432.T,NTT,JP,^N225
+8035.T,Tokyo Electron,JP,^N225
+4063.T,Shin-Etsu Chemical,JP,^N225
+6501.T,Hitachi,JP,^N225
+7974.T,Nintendo,JP,^N225
+9983.T,Fast Retailing,JP,^N225
+8058.T,Mitsubishi Corp,JP,^N225
+8001.T,Itochu,JP,^N225
+6902.T,Denso,JP,^N225
+7267.T,Honda,JP,^N225
+6954.T,Fanuc,JP,^N225
+4502.T,Takeda,JP,^N225
+6098.T,Recruit,JP,^N225
+8766.T,Tokio Marine,JP,^N225
+6367.T,Daikin,JP,^N225
+BHP.AX,BHP,AU,^AXJO
+CBA.AX,Commonwealth Bank,AU,^AXJO
+CSL.AX,CSL,AU,^AXJO
+NAB.AX,National Australia Bank,AU,^AXJO
+WBC.AX,Westpac,AU,^AXJO
+ANZ.AX,ANZ,AU,^AXJO
+WES.AX,Wesfarmers,AU,^AXJO
+MQG.AX,Macquarie,AU,^AXJO
+FMG.AX,Fortescue,AU,^AXJO
+WDS.AX,Woodside Energy,AU,^AXJO
+TLS.AX,Telstra,AU,^AXJO
+D05.SI,DBS Group,SG,^STI
+O39.SI,OCBC,SG,^STI
+U11.SI,UOB,SG,^STI
+Z74.SI,Singtel,SG,^STI
+C6L.SI,Singapore Airlines,SG,^STI
+S63.SI,ST Engineering,SG,^STI
+G13.SI,Genting Singapore,SG,^STI
+C38U.SI,CapitaLand Integrated Commercial Trust,SG,^STI
+MMM,3M,US,^GSPC
+AOS,A. O. Smith,US,^GSPC
+ABT,Abbott Laboratories,US,^GSPC
+AES,AES Corporation,US,^GSPC
+AFL,Aflac,US,^GSPC
+A,Agilent Technologies,US,^GSPC
+APD,Air Products,US,^GSPC
+ABNB,Airbnb,US,^GSPC
+AKAM,Akamai Technologies,US,^GSPC
+ALB,Albemarle Corporation,US,^GSPC
+ARE,Alexandria Real Estate Equities,US,^GSPC
+ALGN,Align Technology,US,^GSPC
+ALLE,Allegion,US,^GSPC
+LNT,Alliant Energy,US,^GSPC
+ALL,Allstate,US,^GSPC
+GOOG,Alphabet Inc. (Class C),US,^GSPC
+MO,Altria,US,^GSPC
+AMCR,Amcor,US,^GSPC
+AEE,Ameren,US,^GSPC
+AEP,American Electric Power,US,^GSPC
+AIG,American International Group,US,^GSPC
+AMT,American Tower,US,^GSPC
+AWK,American Water Works,US,^GSPC
+AMP,Ameriprise Financial,US,^GSPC
+AME,Ametek,US,^GSPC
+APH,Amphenol,US,^GSPC
+ADI,Analog Devices,US,^GSPC
+AON,Aon plc,US,^GSPC
+APA,APA Corporation,US,^GSPC
+APO,Apollo Global Management,US,^GSPC
+AMAT,Applied Materials,US,^GSPC
+APP,AppLovin,US,^GSPC
+APTV,Aptiv,US,^GSPC
+ACGL,Arch Capital Group,US,^GSPC
+ADM,Archer Daniels Midland,US,^GSPC
+ARES,Ares Management,US,^GSPC
+ANET,Arista Networks,US,^GSPC
+AJG,Arthur J. Gallagher & Co.,US,^GSPC
+AIZ,Assurant,US,^GSPC
+ATO,Atmos Energy,US,^GSPC
+ADSK,Autodesk,US,^GSPC
+ADP,Automatic Data Processing,US,^GSPC
+AZO,AutoZone,US,^GSPC
+AVB,AvalonBay Communities,US,^GSPC
+AVY,Avery Dennison,US,^GSPC
+AXON,Axon Enterprise,US,^GSPC
+BKR,Baker Hughes,US,^GSPC
+BALL,Ball Corporation,US,^GSPC
+BAX,Baxter International,US,^GSPC
+BDX,Becton Dickinson,US,^GSPC
+BBY,Best Buy,US,^GSPC
+TECH,Bio-Techne,US,^GSPC
+BIIB,Biogen,US,^GSPC
+BX,Blackstone Inc.,US,^GSPC
+XYZ,Block  Inc.,US,^GSPC
+BNY,BNY Mellon,US,^GSPC
+BKNG,Booking Holdings,US,^GSPC
+BSX,Boston Scientific,US,^GSPC
+BMY,Bristol Myers Squibb,US,^GSPC
+BR,Broadridge Financial Solutions,US,^GSPC
+BRO,Brown & Brown,US,^GSPC
+BF-B,Brown–Forman,US,^GSPC
+BLDR,Builders FirstSource,US,^GSPC
+BG,Bunge Global,US,^GSPC
+BXP,BXP  Inc.,US,^GSPC
+CHRW,C.H. Robinson,US,^GSPC
+CDNS,Cadence Design Systems,US,^GSPC
+CPT,Camden Property Trust,US,^GSPC
+COF,Capital One,US,^GSPC
+CAH,Cardinal Health,US,^GSPC
+CCL,Carnival Corporation,US,^GSPC
+CARR,Carrier Global,US,^GSPC
+CVNA,Carvana,US,^GSPC
+CASY,Casey's,US,^GSPC
+CBOE,Cboe Global Markets,US,^GSPC
+CBRE,CBRE Group,US,^GSPC
+CDW,CDW Corporation,US,^GSPC
+COR,Cencora,US,^GSPC
+CNC,Centene Corporation,US,^GSPC
+CNP,CenterPoint Energy,US,^GSPC
+CF,CF Industries,US,^GSPC
+CRL,Charles River Laboratories,US,^GSPC
+CHTR,Charter Communications,US,^GSPC
+CMG,Chipotle Mexican Grill,US,^GSPC
+CB,Chubb Limited,US,^GSPC
+CHD,Church & Dwight,US,^GSPC
+CIEN,Ciena,US,^GSPC
+CI,Cigna,US,^GSPC
+CINF,Cincinnati Financial,US,^GSPC
+CTAS,Cintas,US,^GSPC
+CFG,Citizens Financial Group,US,^GSPC
+CLX,Clorox,US,^GSPC
+CME,CME Group,US,^GSPC
+CMS,CMS Energy,US,^GSPC
+CTSH,Cognizant,US,^GSPC
+COHR,Coherent Corp.,US,^GSPC
+COIN,Coinbase,US,^GSPC
+CL,Colgate-Palmolive,US,^GSPC
+FIX,Comfort Systems USA,US,^GSPC
+ED,Consolidated Edison,US,^GSPC
+STZ,Constellation Brands,US,^GSPC
+CEG,Constellation Energy,US,^GSPC
+COO,Cooper Companies (The),US,^GSPC
+CPRT,Copart,US,^GSPC
+GLW,Corning Inc.,US,^GSPC
+CPAY,Corpay,US,^GSPC
+CTVA,Corteva,US,^GSPC
+CSGP,CoStar Group,US,^GSPC
+CRH,CRH plc,US,^GSPC
+CRWD,CrowdStrike,US,^GSPC
+CCI,Crown Castle,US,^GSPC
+CSX,CSX Corporation,US,^GSPC
+CMI,Cummins,US,^GSPC
+CVS,CVS Health,US,^GSPC
+DHR,Danaher Corporation,US,^GSPC
+DRI,Darden Restaurants,US,^GSPC
+DDOG,Datadog,US,^GSPC
+DVA,DaVita,US,^GSPC
+DECK,Deckers Brands,US,^GSPC
+DELL,Dell Technologies,US,^GSPC
+DAL,Delta Air Lines,US,^GSPC
+DVN,Devon Energy,US,^GSPC
+DXCM,Dexcom,US,^GSPC
+FANG,Diamondback Energy,US,^GSPC
+DLR,Digital Realty,US,^GSPC
+DG,Dollar General,US,^GSPC
+DLTR,Dollar Tree,US,^GSPC
+D,Dominion Energy,US,^GSPC
+DPZ,Domino's,US,^GSPC
+DASH,DoorDash,US,^GSPC
+DOV,Dover Corporation,US,^GSPC
+DOW,Dow Inc.,US,^GSPC
+DHI,D. R. Horton,US,^GSPC
+DTE,DTE Energy,US,^GSPC
+DUK,Duke Energy,US,^GSPC
+DD,DuPont,US,^GSPC
+ETN,Eaton Corporation,US,^GSPC
+EBAY,eBay Inc.,US,^GSPC
+ECHO,EchoStar,US,^GSPC
+ECL,Ecolab,US,^GSPC
+EIX,Edison International,US,^GSPC
+EW,Edwards Lifesciences,US,^GSPC
+EA,Electronic Arts,US,^GSPC
+ELV,Elevance Health,US,^GSPC
+EME,Emcor,US,^GSPC
+EMR,Emerson Electric,US,^GSPC
+ETR,Entergy,US,^GSPC
+EOG,EOG Resources,US,^GSPC
+EQT,EQT Corporation,US,^GSPC
+EFX,Equifax,US,^GSPC
+EQIX,Equinix,US,^GSPC
+EQR,Equity Residential,US,^GSPC
+ERIE,Erie Indemnity,US,^GSPC
+ESS,Essex Property Trust,US,^GSPC
+EL,Estée Lauder Companies (The),US,^GSPC
+EG,Everest Group,US,^GSPC
+EVRG,Evergy,US,^GSPC
+ES,Eversource Energy,US,^GSPC
+EXC,Exelon,US,^GSPC
+EXE,Expand Energy,US,^GSPC
+EXPE,Expedia Group,US,^GSPC
+EXPD,Expeditors International,US,^GSPC
+EXR,Extra Space Storage,US,^GSPC
+FFIV,F5  Inc.,US,^GSPC
+FDS,FactSet,US,^GSPC
+FICO,Fair Isaac,US,^GSPC
+FAST,Fastenal,US,^GSPC
+FRT,Federal Realty Investment Trust,US,^GSPC
+FDX,FedEx,US,^GSPC
+FDXF,FedEx Freight,US,^GSPC
+FIS,Fidelity National Information Services,US,^GSPC
+FITB,Fifth Third Bancorp,US,^GSPC
+FSLR,First Solar,US,^GSPC
+FE,FirstEnergy,US,^GSPC
+FISV,Fiserv,US,^GSPC
+FLEX,Flex Ltd.,US,^GSPC
+F,Ford Motor Company,US,^GSPC
+FTNT,Fortinet,US,^GSPC
+FTV,Fortive,US,^GSPC
+FOXA,Fox Corporation (Class A),US,^GSPC
+FOX,Fox Corporation (Class B),US,^GSPC
+BEN,Franklin Resources,US,^GSPC
+FCX,Freeport-McMoRan,US,^GSPC
+GRMN,Garmin,US,^GSPC
+IT,Gartner,US,^GSPC
+GEHC,GE HealthCare,US,^GSPC
+GEV,GE Vernova,US,^GSPC
+GEN,Gen Digital,US,^GSPC
+GNRC,Generac,US,^GSPC
+GD,General Dynamics,US,^GSPC
+GIS,General Mills,US,^GSPC
+GM,General Motors,US,^GSPC
+GPC,Genuine Parts Company,US,^GSPC
+GPN,Global Payments,US,^GSPC
+GL,Globe Life,US,^GSPC
+GDDY,GoDaddy,US,^GSPC
+HAL,Halliburton,US,^GSPC
+HIG,Hartford (The),US,^GSPC
+HAS,Hasbro,US,^GSPC
+HCA,HCA Healthcare,US,^GSPC
+DOC,Healthpeak Properties,US,^GSPC
+HSIC,Henry Schein,US,^GSPC
+HSY,Hershey Company (The),US,^GSPC
+HPE,Hewlett Packard Enterprise,US,^GSPC
+HLT,Hilton Worldwide,US,^GSPC
+HONA,Honeywell Aerospace,US,^GSPC
+HRL,Hormel Foods,US,^GSPC
+HST,Host Hotels & Resorts,US,^GSPC
+HWM,Howmet Aerospace,US,^GSPC
+HPQ,HP Inc.,US,^GSPC
+HUBB,Hubbell Incorporated,US,^GSPC
+HUM,Humana,US,^GSPC
+HBAN,Huntington Bancshares,US,^GSPC
+HII,Huntington Ingalls Industries,US,^GSPC
+IEX,IDEX Corporation,US,^GSPC
+IDXX,Idexx Laboratories,US,^GSPC
+ITW,Illinois Tool Works,US,^GSPC
+INCY,Incyte,US,^GSPC
+IR,Ingersoll Rand,US,^GSPC
+PODD,Insulet Corporation,US,^GSPC
+IBKR,Interactive Brokers,US,^GSPC
+ICE,Intercontinental Exchange,US,^GSPC
+IFF,International Flavors & Fragrances,US,^GSPC
+IP,International Paper,US,^GSPC
+INTU,Intuit,US,^GSPC
+IVZ,Invesco,US,^GSPC
+INVH,Invitation Homes,US,^GSPC
+IQV,IQVIA,US,^GSPC
+IRM,Iron Mountain,US,^GSPC
+JBHT,J.B. Hunt,US,^GSPC
+JBL,Jabil,US,^GSPC
+JKHY,Jack Henry & Associates,US,^GSPC
+J,Jacobs Solutions,US,^GSPC
+JCI,Johnson Controls,US,^GSPC
+KVUE,Kenvue,US,^GSPC
+KDP,Keurig Dr Pepper,US,^GSPC
+KEY,KeyCorp,US,^GSPC
+KEYS,Keysight Technologies,US,^GSPC
+KMB,Kimberly-Clark,US,^GSPC
+KIM,Kimco Realty,US,^GSPC
+KMI,Kinder Morgan,US,^GSPC
+KKR,KKR & Co.,US,^GSPC
+KLAC,KLA Corporation,US,^GSPC
+KHC,Kraft Heinz,US,^GSPC
+KR,Kroger,US,^GSPC
+LHX,L3Harris,US,^GSPC
+LH,Labcorp,US,^GSPC
+LRCX,Lam Research,US,^GSPC
+LVS,Las Vegas Sands,US,^GSPC
+LDOS,Leidos,US,^GSPC
+LEN,Lennar,US,^GSPC
+LII,Lennox International,US,^GSPC
+LIN,Linde plc,US,^GSPC
+LYV,Live Nation Entertainment,US,^GSPC
+L,Loews Corporation,US,^GSPC
+LULU,Lululemon Athletica,US,^GSPC
+LITE,Lumentum,US,^GSPC
+LYB,LyondellBasell,US,^GSPC
+MTB,M&T Bank,US,^GSPC
+MPC,Marathon Petroleum,US,^GSPC
+MAR,Marriott International,US,^GSPC
+MRSH,Marsh McLennan,US,^GSPC
+MLM,Martin Marietta Materials,US,^GSPC
+MRVL,Marvell Technology,US,^GSPC
+MAS,Masco,US,^GSPC
+MKC,McCormick & Company,US,^GSPC
+MCK,McKesson Corporation,US,^GSPC
+MDT,Medtronic,US,^GSPC
+MET,MetLife,US,^GSPC
+MTD,Mettler Toledo,US,^GSPC
+MGM,MGM Resorts,US,^GSPC
+MCHP,Microchip Technology,US,^GSPC
+MU,Micron Technology,US,^GSPC
+MAA,Mid-America Apartment Communities,US,^GSPC
+MRNA,Moderna,US,^GSPC
+TAP,Molson Coors Beverage Company,US,^GSPC
+MDLZ,Mondelez International,US,^GSPC
+MPWR,Monolithic Power Systems,US,^GSPC
+MNST,Monster Beverage,US,^GSPC
+MCO,Moody's Corporation,US,^GSPC
+MOS,Mosaic Company (The),US,^GSPC
+MSI,Motorola Solutions,US,^GSPC
+MSCI,MSCI Inc.,US,^GSPC
+NDAQ,Nasdaq  Inc.,US,^GSPC
+NTAP,NetApp,US,^GSPC
+NEM,Newmont,US,^GSPC
+NWSA,News Corp (Class A),US,^GSPC
+NWS,News Corp (Class B),US,^GSPC
+NEE,NextEra Energy,US,^GSPC
+NI,NiSource,US,^GSPC
+NDSN,Nordson Corporation,US,^GSPC
+NSC,Norfolk Southern,US,^GSPC
+NTRS,Northern Trust,US,^GSPC
+NOC,Northrop Grumman,US,^GSPC
+NCLH,Norwegian Cruise Line Holdings,US,^GSPC
+NRG,NRG Energy,US,^GSPC
+NUE,Nucor,US,^GSPC
+NVR,NVR  Inc.,US,^GSPC
+NXPI,NXP Semiconductors,US,^GSPC
+ORLY,O’Reilly Automotive,US,^GSPC
+OXY,Occidental Petroleum,US,^GSPC
+ODFL,Old Dominion,US,^GSPC
+OMC,Omnicom Group,US,^GSPC
+ON,ON Semiconductor,US,^GSPC
+OKE,Oneok,US,^GSPC
+OTIS,Otis Worldwide,US,^GSPC
+PCAR,Paccar,US,^GSPC
+PKG,Packaging Corporation of America,US,^GSPC
+PANW,Palo Alto Networks,US,^GSPC
+PSKY,Paramount Skydance Corporation,US,^GSPC
+PH,Parker Hannifin,US,^GSPC
+PAYX,Paychex,US,^GSPC
+PYPL,PayPal,US,^GSPC
+PNR,Pentair,US,^GSPC
+PCG,PG&E Corporation,US,^GSPC
+PM,Philip Morris International,US,^GSPC
+PSX,Phillips 66,US,^GSPC
+PNW,Pinnacle West Capital,US,^GSPC
+PNC,PNC Financial Services,US,^GSPC
+PPG,PPG Industries,US,^GSPC
+PPL,PPL Corporation,US,^GSPC
+PFG,Principal Financial Group,US,^GSPC
+PGR,Progressive Corporation,US,^GSPC
+PLD,Prologis,US,^GSPC
+PRU,Prudential Financial,US,^GSPC
+PEG,Public Service Enterprise Group,US,^GSPC
+PTC,PTC Inc.,US,^GSPC
+PSA,Public Storage,US,^GSPC
+PHM,PulteGroup,US,^GSPC
+PWR,Quanta Services,US,^GSPC
+DGX,Quest Diagnostics,US,^GSPC
+Q,Qnity Electronics,US,^GSPC
+RL,Ralph Lauren Corporation,US,^GSPC
+RJF,Raymond James Financial,US,^GSPC
+O,Realty Income,US,^GSPC
+REG,Regency Centers,US,^GSPC
+REGN,Regeneron Pharmaceuticals,US,^GSPC
+RF,Regions Financial Corporation,US,^GSPC
+RSG,Republic Services,US,^GSPC
+RMD,ResMed,US,^GSPC
+RVTY,Revvity,US,^GSPC
+HOOD,Robinhood Markets,US,^GSPC
+ROK,Rockwell Automation,US,^GSPC
+ROL,Rollins  Inc.,US,^GSPC
+ROP,Roper Technologies,US,^GSPC
+ROST,Ross Stores,US,^GSPC
+RCL,Royal Caribbean Group,US,^GSPC
+SPGI,S&P Global,US,^GSPC
+SNDK,Sandisk,US,^GSPC
+SBAC,SBA Communications,US,^GSPC
+SLB,Schlumberger,US,^GSPC
+STX,Seagate Technology,US,^GSPC
+SRE,Sempra,US,^GSPC
+SHW,Sherwin-Williams,US,^GSPC
+SPG,Simon Property Group,US,^GSPC
+SWKS,Skyworks Solutions,US,^GSPC
+SJM,J.M. Smucker Company (The),US,^GSPC
+SW,Smurfit Westrock,US,^GSPC
+SNA,Snap-on,US,^GSPC
+SOLV,Solventum,US,^GSPC
+SO,Southern Company,US,^GSPC
+LUV,Southwest Airlines,US,^GSPC
+SWK,Stanley Black & Decker,US,^GSPC
+STT,State Street Corporation,US,^GSPC
+STLD,Steel Dynamics,US,^GSPC
+STE,Steris,US,^GSPC
+SYK,Stryker Corporation,US,^GSPC
+SMCI,Supermicro,US,^GSPC
+SYF,Synchrony Financial,US,^GSPC
+SNPS,Synopsys,US,^GSPC
+SYY,Sysco,US,^GSPC
+TMUS,T-Mobile US,US,^GSPC
+TROW,T. Rowe Price,US,^GSPC
+TTWO,Take-Two Interactive,US,^GSPC
+TPR,Tapestry  Inc.,US,^GSPC
+TRGP,Targa Resources,US,^GSPC
+TGT,Target Corporation,US,^GSPC
+TEL,TE Connectivity,US,^GSPC
+TDY,Teledyne Technologies,US,^GSPC
+TER,Teradyne,US,^GSPC
+TPL,Texas Pacific Land Corporation,US,^GSPC
+TXT,Textron,US,^GSPC
+TJX,TJX Companies,US,^GSPC
+TKO,TKO Group Holdings,US,^GSPC
+TTD,Trade Desk (The),US,^GSPC
+TSCO,Tractor Supply,US,^GSPC
+TT,Trane Technologies,US,^GSPC
+TDG,TransDigm Group,US,^GSPC
+TRV,Travelers Companies (The),US,^GSPC
+TRMB,Trimble Inc.,US,^GSPC
+TFC,Truist Financial,US,^GSPC
+TYL,Tyler Technologies,US,^GSPC
+TSN,Tyson Foods,US,^GSPC
+USB,U.S. Bancorp,US,^GSPC
+UDR,UDR  Inc.,US,^GSPC
+ULTA,Ulta Beauty,US,^GSPC
+UNP,Union Pacific Corporation,US,^GSPC
+UAL,United Airlines Holdings,US,^GSPC
+URI,United Rentals,US,^GSPC
+UHS,Universal Health Services,US,^GSPC
+VLO,Valero Energy,US,^GSPC
+VEEV,Veeva Systems,US,^GSPC
+VTR,Ventas,US,^GSPC
+VLTO,Veralto,US,^GSPC
+VRSN,Verisign,US,^GSPC
+VRSK,Verisk Analytics,US,^GSPC
+VRTX,Vertex Pharmaceuticals,US,^GSPC
+VRT,Vertiv,US,^GSPC
+VTRS,Viatris,US,^GSPC
+VICI,Vici Properties,US,^GSPC
+VST,Vistra Corp.,US,^GSPC
+VMC,Vulcan Materials Company,US,^GSPC
+WRB,W. R. Berkley Corporation,US,^GSPC
+GWW,W. W. Grainger,US,^GSPC
+WAB,Wabtec,US,^GSPC
+WBD,Warner Bros. Discovery,US,^GSPC
+WM,Waste Management,US,^GSPC
+WAT,Waters Corporation,US,^GSPC
+WEC,WEC Energy Group,US,^GSPC
+WELL,Welltower,US,^GSPC
+WST,West Pharmaceutical Services,US,^GSPC
+WDC,Western Digital,US,^GSPC
+WY,Weyerhaeuser,US,^GSPC
+WSM,Williams-Sonoma  Inc.,US,^GSPC
+WMB,Williams Companies,US,^GSPC
+WTW,Willis Towers Watson,US,^GSPC
+WDAY,Workday  Inc.,US,^GSPC
+WYNN,Wynn Resorts,US,^GSPC
+XEL,Xcel Energy,US,^GSPC
+XYL,Xylem Inc.,US,^GSPC
+YUM,Yum! Brands,US,^GSPC
+ZBRA,Zebra Technologies,US,^GSPC
+ZBH,Zimmer Biomet,US,^GSPC
+ZTS,Zoetis,US,^GSPC
+III.L,3i,UK,^FTSE
+ABDN.L,Aberdeen Group,UK,^FTSE
+ADM.L,Admiral Group,UK,^FTSE
+AAF.L,Airtel Africa,UK,^FTSE
+ALW.L,Alliance Witan,UK,^FTSE
+AAL.L,Anglo American plc,UK,^FTSE
+ANTO.L,Antofagasta plc,UK,^FTSE
+ABF.L,Associated British Foods,UK,^FTSE
+AUTO.L,Autotrader Group,UK,^FTSE
+AV.L,Aviva,UK,^FTSE
+BAB.L,Babcock International,UK,^FTSE
+BTRW.L,Barratt Redrow,UK,^FTSE
+BEZ.L,Beazley,UK,^FTSE
+BATS.L,British American Tobacco,UK,^FTSE
+BLND.L,British Land,UK,^FTSE
+BT-A.L,BT Group,UK,^FTSE
+BNZL.L,Bunzl,UK,^FTSE
+BRBY.L,Burberry Group,UK,^FTSE
+CNA.L,Centrica,UK,^FTSE
+CCEP.L,Coca-Cola Europacific Partners,UK,^FTSE
+CCH.L,Coca-Cola HBC,UK,^FTSE
+CPG.L,Compass Group,UK,^FTSE
+CCC.L,Computacenter,UK,^FTSE
+CTEC.L,Convatec,UK,^FTSE
+CRDA.L,Croda International,UK,^FTSE
+DCC.L,DCC Energy,UK,^FTSE
+DGE.L,Diageo,UK,^FTSE
+DPLM.L,Diploma,UK,^FTSE
+EDV.L,Endeavour Mining,UK,^FTSE
+ENT.L,Entain,UK,^FTSE
+EXPN.L,Experian,UK,^FTSE
+FCIT.L,F & C Investment Trust,UK,^FTSE
+FRES.L,Fresnillo plc,UK,^FTSE
+GAW.L,Games Workshop,UK,^FTSE
+GLEN.L,Glencore,UK,^FTSE
+HLN.L,Haleon,UK,^FTSE
+HLMA.L,Halma plc,UK,^FTSE
+HSX.L,Hiscox,UK,^FTSE
+HWDN.L,Howdens Joinery,UK,^FTSE
+ICG.L,ICG,UK,^FTSE
+IGG.L,IG Group,UK,^FTSE
+IHG.L,IHG Hotels & Resorts,UK,^FTSE
+IMI.L,IMI,UK,^FTSE
+IMB.L,Imperial Brands,UK,^FTSE
+INF.L,Informa,UK,^FTSE
+IAG.L,International Airlines Group,UK,^FTSE
+ITRK.L,Intertek,UK,^FTSE
+INVP.L,Investec,UK,^FTSE
+JD.L,JD Sports,UK,^FTSE
+BGEO.L,Lion Finance Group,UK,^FTSE
+KGF.L,Kingfisher plc,UK,^FTSE
+LAND.L,Land Securities,UK,^FTSE
+LGEN.L,Legal & General,UK,^FTSE
+LMP.L,LondonMetric Property,UK,^FTSE
+MNG.L,M&G,UK,^FTSE
+MKS.L,Marks & Spencer,UK,^FTSE
+MRO.L,Melrose Industries,UK,^FTSE
+MTLN.L,Metlen Energy & Metals,UK,^FTSE
+NG.L,National Grid plc,UK,^FTSE
+NWG.L,NatWest Group,UK,^FTSE
+NXT.L,Next plc,UK,^FTSE
+PSON.L,Pearson plc,UK,^FTSE
+PSH.L,Pershing Square Holdings,UK,^FTSE
+PSN.L,Persimmon,UK,^FTSE
+PCT.L,Polar Capital Technology Trust,UK,^FTSE
+RKT.L,Reckitt,UK,^FTSE
+RTO.L,Rentokil Initial,UK,^FTSE
+RR.L,Rolls-Royce Holdings,UK,^FTSE
+SGE.L,Sage Group,UK,^FTSE
+SBRY.L,Sainsbury's,UK,^FTSE
+SDR.L,Schroders,UK,^FTSE
+SMT.L,Scottish Mortgage Investment Trust,UK,^FTSE
+SGRO.L,Segro,UK,^FTSE
+SVT.L,Severn Trent,UK,^FTSE
+SMIN.L,Smiths Group,UK,^FTSE
+SN.L,Smith & Nephew,UK,^FTSE
+SPX.L,Spirax Group,UK,^FTSE
+SSE.L,SSE plc,UK,^FTSE
+STAN.L,Standard Chartered,UK,^FTSE
+SDLF.L,Standard Life,UK,^FTSE
+STJ.L,St. James's Place,UK,^FTSE
+BBOX.L,Tritax Big Box REIT,UK,^FTSE
+UU.L,United Utilities,UK,^FTSE
+WEIR.L,Weir Group,UK,^FTSE
+WTB.L,Whitbread,UK,^FTSE
+ALL.AX,Aristocrat Leisure,AU,^AXJO
+AMC.AX,Amcor,AU,^AXJO
+BXB.AX,Brambles,AU,^AXJO
+CAR.AX,CAR Group,AU,^AXJO
+COH.AX,Cochlear,AU,^AXJO
+COL.AX,Coles Group,AU,^AXJO
+CPU.AX,Computershare,AU,^AXJO
+EVN.AX,Evolution Mining,AU,^AXJO
+FPH.AX,Fisher & Paykel Healthcare,AU,^AXJO
+GMG.AX,Goodman Group,AU,^AXJO
+IAG.AX,Insurance Australia Group,AU,^AXJO
+JBH.AX,JB Hi-Fi,AU,^AXJO
+JHX.AX,James Hardie,AU,^AXJO
+LYC.AX,Lynas,AU,^AXJO
+MPL.AX,Medibank,AU,^AXJO
+NEM.AX,Newmont,AU,^AXJO
+NST.AX,Northern Star Resources,AU,^AXJO
+NWS.AX,News Corp,AU,^AXJO
+ORG.AX,Origin Energy,AU,^AXJO
+PME.AX,Pro Medicus,AU,^AXJO
+QAN.AX,Qantas,AU,^AXJO
+QBE.AX,QBE Insurance,AU,^AXJO
+REA.AX,REA Group,AU,^AXJO
+RIO.AX,Rio Tinto,AU,^AXJO
+RMD.AX,ResMed,AU,^AXJO
+S32.AX,South32,AU,^AXJO
+SCG.AX,Scentre Group,AU,^AXJO
+SGH.AX,Seven Group Holdings,AU,^AXJO
+SGP.AX,Stockland,AU,^AXJO
+SIG.AX,Sigma Healthcare,AU,^AXJO
+SOL.AX,Soul Patts,AU,^AXJO
+STO.AX,Santos,AU,^AXJO
+SUN.AX,Suncorp,AU,^AXJO
+TCL.AX,Transurban,AU,^AXJO
+VAS.AX,Vanguard Australian Shares,AU,^AXJO
+WOW.AX,Woolworths,AU,^AXJO
+XRO.AX,Xero,AU,^AXJO
+XYZ.AX,Block,AU,^AXJO
+A17U.SI,CapitaLand Ascendas REIT,SG,^STI
+9CI.SI,CapitaLand Investment,SG,^STI
+C09.SI,City Developments Limited,SG,^STI
+D01.SI,DFI Retail Group Holdings Limited,SG,^STI
+J69U.SI,Frasers Centrepoint Trust,SG,^STI
+BUOU.SI,Frasers Logistics & Commercial Trust,SG,^STI
+H78.SI,Hongkong Land Holdings,SG,^STI
+J36.SI,Jardine Matheson Holdings Limited,SG,^STI
+BN4.SI,Keppel Corporation,SG,^STI
+AJBU.SI,Keppel DC Reit,SG,^STI
+ME8U.SI,Mapletree Industrial Trust,SG,^STI
+M44U.SI,Mapletree Logistics Trust,SG,^STI
+N2IU.SI,Mapletree Pan Asia Commercial Trust,SG,^STI
+S58.SI,SATS,SG,^STI
+5E2.SI,Seatrium Limited,SG,^STI
+U96.SI,Sembcorp Industries,SG,^STI
+S68.SI,Singapore Exchange,SG,^STI
+Y92.SI,Thai Beverages,SG,^STI
+U14.SI,UOL Group,SG,^STI
+V03.SI,Venture Corporation,SG,^STI
+F34.SI,Wilmar International,SG,^STI
+BS6.SI,Yangzijiang Shipbuilding Holdings [zh],SG,^STI

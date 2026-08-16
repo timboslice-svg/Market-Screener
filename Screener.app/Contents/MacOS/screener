@@ -1,0 +1,120 @@
+#!/bin/bash
+# Market Screener launcher.
+#  - double-click: run pipeline now, open dashboard
+#  - --scheduled (from launchd): run pipeline, notify only
+# Self-installs a nightly launchd schedule (Mon-Fri 22:15) so it keeps running
+# indefinitely, across reboots, without any terminal usage.
+
+# If we were launched under Rosetta (x86_64 emulation on Apple Silicon), re-exec
+# natively — otherwise python picks x86_64 and arm64 numpy/pandas refuse to load.
+if [ "$(sysctl -n sysctl.proc_translated 2>/dev/null)" = "1" ]; then
+  exec arch -arm64 /bin/bash "$0" "$@"
+fi
+
+SCHEDULED=""
+[ "$1" = "--scheduled" ] && SCHEDULED=1
+notify() { osascript -e "display notification \"$1\" with title \"Market Screener\"" 2>/dev/null; }
+
+# --- locate the screener directory
+APPDIR="$(cd "$(dirname "$0")/../../.." && pwd)"
+DIR=""
+for D in "$HOME/Documents/6_Business/7_Trading_Bot/equity_research_2026-07/screener" "$APPDIR"; do
+  if [ -f "$D/scan.py" ]; then DIR="$D"; break; fi
+done
+if [ -z "$DIR" ]; then
+  osascript -e 'display alert "Market Screener" message "screener folder not found (expected in equity_research_2026-07/screener)"'
+  exit 1
+fi
+LOG="$DIR/run.log"
+echo "=== launch $(date) scheduled=${SCHEDULED:-0} ===" >> "$LOG"
+
+# --- load API keys from .env (KEY=value lines)
+if [ -f "$DIR/.env" ]; then
+  set -a; . "$DIR/.env"; set +a
+fi
+
+# --- find a python3 that has pandas+yfinance.
+# Finder launches get a minimal PATH, so ask the user's login shell first —
+# that returns the exact python that works in their Terminal.
+LOGIN_PY="$(/bin/zsh -lc 'command -v python3' 2>/dev/null | tail -1)"
+PY=""
+for CAND in "$LOGIN_PY" \
+            /Library/Frameworks/Python.framework/Versions/3.11/bin/python3 \
+            /Library/Frameworks/Python.framework/Versions/3.12/bin/python3 \
+            /opt/homebrew/bin/python3 /usr/local/bin/python3 /usr/bin/python3; do
+  [ -n "$CAND" ] && [ -x "$CAND" ] || continue
+  if ERR="$("$CAND" -c 'import pandas, yfinance' 2>&1)"; then
+    PY="$CAND"; break
+  else
+    echo "[pycheck] $CAND failed: $ERR" >> "$LOG"
+  fi
+done
+if [ -z "$PY" ]; then
+  osascript -e 'display alert "Market Screener" message "No python3 with pandas+yfinance found. Details in run.log. Fix in Terminal: python3 -m pip install --user pandas yfinance"'
+  open -e "$LOG"
+  exit 1
+fi
+echo "[pycheck] using $PY" >> "$LOG"
+
+# --- self-install/refresh the nightly schedule (Mon-Fri 22:15, indefinitely)
+PLIST="$HOME/Library/LaunchAgents/com.tim.marketscreener.plist"
+ME="$(cd "$(dirname "$0")" && pwd)/screener"
+mkdir -p "$HOME/Library/LaunchAgents"
+cat > "$PLIST" <<EOF
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0"><dict>
+  <key>Label</key><string>com.tim.marketscreener</string>
+  <key>ProgramArguments</key><array><string>$ME</string><string>--scheduled</string></array>
+  <key>StartCalendarInterval</key><array>
+    <dict><key>Weekday</key><integer>1</integer><key>Hour</key><integer>22</integer><key>Minute</key><integer>15</integer></dict>
+    <dict><key>Weekday</key><integer>2</integer><key>Hour</key><integer>22</integer><key>Minute</key><integer>15</integer></dict>
+    <dict><key>Weekday</key><integer>3</integer><key>Hour</key><integer>22</integer><key>Minute</key><integer>15</integer></dict>
+    <dict><key>Weekday</key><integer>4</integer><key>Hour</key><integer>22</integer><key>Minute</key><integer>15</integer></dict>
+    <dict><key>Weekday</key><integer>5</integer><key>Hour</key><integer>22</integer><key>Minute</key><integer>15</integer></dict>
+  </array>
+  <key>RunAtLoad</key><false/>
+</dict></plist>
+EOF
+launchctl unload "$PLIST" 2>/dev/null
+launchctl load "$PLIST" 2>/dev/null
+echo "[schedule] nightly agent installed ($PLIST)" >> "$LOG"
+
+# --- single-instance guard: a second click just shows the dashboard
+LOCK="$DIR/.running"
+if [ -f "$LOCK" ] && kill -0 "$(cat "$LOCK" 2>/dev/null)" 2>/dev/null; then
+  notify "Already scanning — dashboard will refresh when done"
+  [ -z "$SCHEDULED" ] && [ -f "$DIR/dashboard.html" ] && open "$DIR/dashboard.html"
+  exit 0
+fi
+echo $$ > "$LOCK"
+trap 'rm -f "$LOCK"' EXIT
+
+# --- run the pipeline
+cd "$DIR"
+OPENED=""
+if [ -z "$SCHEDULED" ] && [ -f "$DIR/dashboard.html" ]; then
+  # banner so the open page clearly shows a refresh is underway
+  sed -i '' "s|<body>|<body><div style=\"background:#332b00;color:#ffcc66;padding:8px 14px;border-radius:8px;margin:10px 0;font-size:14px\">&#9203; New scan running (started $(date +%H:%M)) — this page updates itself when finished (~10-15 min).</div>|" "$DIR/dashboard.html" 2>/dev/null
+  open "$DIR/dashboard.html"   # show last data immediately; page auto-reloads when fresh
+  OPENED=1
+fi
+notify "Scanning markets — dashboard will refresh itself in a few minutes"
+{
+  "$PY" scan.py && "$PY" overview.py && "$PY" news.py && "$PY" ledger.py
+  "$PY" events_cal.py || echo "calendar failed (non-fatal)"
+  if [ -n "$OPENROUTER_API_KEY" ] || [ -n "$ANTHROPIC_API_KEY" ]; then
+    "$PY" triage_api.py || echo "triage failed"
+  else
+    echo "no API key in .env — skipping AI triage"
+  fi
+  "$PY" dashboard.py
+} >> "$LOG" 2>&1
+
+if [ -f "$DIR/dashboard.html" ]; then
+  notify "Dashboard updated"
+  [ -z "$SCHEDULED" ] && [ -z "$OPENED" ] && open "$DIR/dashboard.html"
+else
+  osascript -e 'display alert "Market Screener" message "Run failed — see run.log"'
+  open -e "$LOG"
+fi

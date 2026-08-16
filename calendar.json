@@ -1,0 +1,91 @@
+{
+ "generated": "2026-07-31",
+ "events": [
+  {
+   "date": "2026-07-31",
+   "name": "Earnings: 6902.T, AAPL, ABBV, ACA.PA, AMZN, CVX, XOM",
+   "tag": "earnings"
+  },
+  {
+   "date": "2026-08-03",
+   "name": "Earnings: 8001.T",
+   "tag": "earnings"
+  },
+  {
+   "date": "2026-08-04",
+   "name": "Earnings: 7203.T, BAYN.DE, BP.L, CAT, HSBA.L, IT, MCD, MRK +3 more",
+   "tag": "earnings"
+  },
+  {
+   "date": "2026-08-05",
+   "name": "Earnings: 7267.T, AMD, AMGN, DIS, GILD, IFX.DE, LLY, UBER",
+   "tag": "earnings"
+  },
+  {
+   "date": "2026-08-06",
+   "name": "Earnings: 7974.T, COP, DTE.DE, RHM.DE, SIE.DE, SOLV",
+   "tag": "earnings"
+  },
+  {
+   "date": "2026-08-07",
+   "name": "Earnings: ALV.DE, MUV2.DE",
+   "tag": "earnings"
+  },
+  {
+   "date": "2026-08-07",
+   "name": "US jobs report (NFP)",
+   "tag": "macro"
+  },
+  {
+   "date": "2026-08-09",
+   "name": "Earnings: BRK-B",
+   "tag": "earnings"
+  },
+  {
+   "date": "2026-08-13",
+   "name": "Earnings: CSCO, RWE.DE",
+   "tag": "earnings"
+  },
+  {
+   "date": "2026-08-14",
+   "name": "Earnings: AMAT",
+   "tag": "earnings"
+  },
+  {
+   "date": "2026-08-18",
+   "name": "Earnings: HD",
+   "tag": "earnings"
+  },
+  {
+   "date": "2026-08-19",
+   "name": "Earnings: LOW",
+   "tag": "earnings"
+  },
+  {
+   "date": "2026-08-19",
+   "name": "VIX futures expiry",
+   "tag": "structural"
+  },
+  {
+   "date": "2026-08-20",
+   "name": "Earnings: DE, WMT",
+   "tag": "earnings"
+  },
+  {
+   "date": "2026-08-21",
+   "name": "Monthly options expiry",
+   "tag": "structural"
+  }
+ ],
+ "flag_earnings": {
+  "7203.T": "2026-08-04",
+  "6902.T": "2026-07-31",
+  "7267.T": "2026-08-05",
+  "7974.T": "2026-08-06",
+  "IT": "2026-08-04",
+  "SOLV": "2026-08-06",
+  "8001.T": "2026-08-03",
+  "AMAT": "2026-08-14"
+ },
+ "flag_exdiv": {}
+}

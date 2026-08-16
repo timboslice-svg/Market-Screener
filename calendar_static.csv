@@ -1,0 +1,7 @@
+date,name,tag
+2026-09-16,FOMC rate decision (Sep 15-16),macro
+2026-10-28,FOMC rate decision (Oct 27-28),macro
+2026-12-09,FOMC rate decision (Dec 8-9),macro
+2026-08-28,Jackson Hole symposium (approx - verify),macro
+# Add ECB / BoJ / BoE / RBA dates from official schedules; refresh each January.
+# tag: macro | earnings | structural | edge
